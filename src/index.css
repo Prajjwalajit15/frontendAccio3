@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 20px rgb(29, 27, 27);
+  position: sticky;
+  top: 0;
+  background-color: rgb(37, 127, 245);
+}
+.news-feed {
+  margin: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; 
+}
+.filters select{ 
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: rgb(54, 54, 56);
+  color: white;
+  border-radius: 5px;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  
+}
+.articles-grid h3{ 
+  font-weight: bolder;
+}
+.articles-grid p{ 
+  font-size: 13px;
+}
+.articles-grid a{ 
+  font-size: 13px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px rgb(39, 37, 37);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: rgb(60, 71, 88);
+  color: white;
+  border-radius: 20px;
+}
+.pagination span {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: rgb(52, 126, 238);
+  color: white;
+  border-radius: 20px;
+}
+
